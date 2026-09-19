@@ -200,9 +200,14 @@ To build and run the full stack production bundle:
 # Build both frontend & backend
 npm run build:all
 
-# Start production server on port 5000
+# Start production server (Render supplies PORT)
 npm start
 ```
+
+The Express server serves the Vite output from `dist` and keeps the REST API under `/api`.
+For Render, use `npm install && npm --prefix server install && npm run build:all` as the build command and `npm start` as the start command. Set `DATABASE_URL` to a persistent SQLite path or a production database URL, and set `HOST=0.0.0.0`.
+
+On Windows, stop any running server before changing Prisma dependencies or regenerating the client. The server Prisma scripts retry transient `query_engine-windows.dll.node` locks and reuse an existing generated client when Windows still has that DLL open.
 
 ---
 

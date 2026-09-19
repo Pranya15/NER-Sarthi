@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: ner-saarthi
+    runtime: node
+    buildCommand: npm install && npm --prefix server install && npm run build:all
+    releaseCommand: npm --prefix server run db:push && npm --prefix server run db:seed
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        value: file:/var/data/ner-saarthi.db
+      - key: HOST
+        value: 0.0.0.0
+    disk:
+      name: ner-saarthi-data
+      mountPath: /var/data
+      sizeGB: 1
