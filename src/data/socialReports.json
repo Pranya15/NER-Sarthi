@@ -1,0 +1,32 @@
+[
+  {
+    "id": "SR-201",
+    "handle": "@ner_demo_reporter01",
+    "routeId": "R-001",
+    "routeName": "Guwahati – Shillong Corridor",
+    "timestamp": "DEMO_RELATIVE",
+    "content": "Clouds getting very low on Umiam Lake stretch. Visibility down, drive carefully everyone! #NERLogistics",
+    "severity": "low",
+    "confidence": 75
+  },
+  {
+    "id": "SR-202",
+    "handle": "@mizo_route_tracker_demo",
+    "routeId": "R-009",
+    "routeName": "Silchar – Aizawl Highway",
+    "timestamp": "DEMO_RELATIVE",
+    "content": "Landslide clearance work in progress near Vairengte border. JCB machines actively clearing soil. #RoadAlert",
+    "severity": "high",
+    "confidence": 89
+  },
+  {
+    "id": "SR-203",
+    "handle": "@nagaland_express_demo",
+    "routeId": "R-006",
+    "routeName": "Dimapur – Kohima Highway",
+    "timestamp": "DEMO_RELATIVE",
+    "content": "Traffic diverted via Bypass road due to slope instability near Zubza. Expect +45 mins delay.",
+    "severity": "medium",
+    "confidence": 82
+  }
+]

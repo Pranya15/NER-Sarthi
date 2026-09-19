@@ -1,0 +1,34 @@
+[
+  {
+    "id": "RSS-001",
+    "title": "Heavy rainfall warning issued for East Khasi Hills & Jaintia Corridor",
+    "source": "NER-Sarthi Demo Meteorological Feed",
+    "timestamp": "2026-09-01T10:30:00",
+    "category": "Weather Alert",
+    "summary": "Regional Meteorological Center Guwahati issues amber alert for NH-6 Shillong-Silchar corridor due to persistent downpours."
+  },
+  {
+    "id": "RSS-002",
+    "title": "BRO clears minor landslide debris on Gangtok-Siliguri Highway",
+    "source": "Border Roads Organization Field Bureau",
+    "timestamp": "2026-09-01T09:15:00",
+    "category": "Route Update",
+    "summary": "Single lane traffic restored along NH-10 near 27th Mile following 2 hours of clearing operations."
+  },
+  {
+    "id": "RSS-003",
+    "title": "DoNER Advisory: Essential medical transport given green priority along NH-27",
+    "source": "Ministry of DoNER Command Desk",
+    "timestamp": "2026-09-01T08:00:00",
+    "category": "Policy & Logistics",
+    "summary": "Logistics operators carrying critical healthcare supplies gain real-time route optimization priority on the NER-Sarthi platform."
+  },
+  {
+    "id": "RSS-004",
+    "title": "Slope stabilization project underway along Dimapur-Kohima NH-29 Ghats",
+    "source": "Nagaland PWD Infrastructure Cell",
+    "timestamp": "2026-08-31T18:45:00",
+    "category": "Infrastructure",
+    "summary": "Heavy goods vehicles requested to utilize alternate bypass routes between 22:00 and 05:00 hrs."
+  }
+]

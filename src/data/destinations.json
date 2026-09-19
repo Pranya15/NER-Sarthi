@@ -1,0 +1,74 @@
+[
+  {
+    "id": "DEST-001",
+    "name": "Cherrapunji & Dawki",
+    "state": "Meghalaya",
+    "category": "Waterfalls & Living Bridges",
+    "description": "Famous for spectacular waterfalls, limestone caves, crystal clear Umngot River in Dawki, and bio-engineered Living Root Bridges.",
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80",
+    "highlights": ["Living Root Bridges", "Dawki Glass River", "Nohkalikai Falls"]
+  },
+  {
+    "id": "DEST-002",
+    "name": "Tawang & Ziro Valley",
+    "state": "Arunachal Pradesh",
+    "category": "Mountains & Monasteries",
+    "description": "Home to the majestic 400-year-old Tawang Monastery, snow-clad Sela Pass, and the lush UNESCO-tentative Ziro Valley.",
+    "image": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=80",
+    "highlights": ["Tawang Monastery", "Sela Pass", "Ziro Music Valley"]
+  },
+  {
+    "id": "DEST-003",
+    "name": "Nathula Pass & Gurudongmar Lake",
+    "state": "Sikkim",
+    "category": "Himalayan Glaciers & Lakes",
+    "description": "Breathtaking high-altitude lakes at 17,800 feet surrounded by sacred snow peaks and historic Silk Route passes.",
+    "image": "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=800&q=80",
+    "highlights": ["Gurudongmar Lake", "Nathula Pass", "Tsomgo Lake"]
+  },
+  {
+    "id": "DEST-004",
+    "name": "Kaziranga & Majuli Island",
+    "state": "Assam",
+    "category": "Wildlife & River Heritage",
+    "description": "World UNESCO sanctuary for the One-Horned Rhinoceros and Majuli, the world's largest inhabited river island.",
+    "image": "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&w=800&q=80",
+    "highlights": ["One-Horned Rhino", "Majuli Satras", "Assam Tea Estates"]
+  },
+  {
+    "id": "DEST-005",
+    "name": "Dzukou Valley & Kohima",
+    "state": "Nagaland",
+    "category": "Tribal Heritage & Trekking",
+    "description": "Known as the Valley of Flowers of the East, boasting emerald rolling hills, rich Naga tribal culture, and Hornbill heritage.",
+    "image": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80",
+    "highlights": ["Dzukou Valley Trek", "Naga Heritage Village", "Kohima War Memorial"]
+  },
+  {
+    "id": "DEST-006",
+    "name": "Reiek Peak & Blue Mountain",
+    "state": "Mizoram",
+    "category": "Rolling Hills & Villages",
+    "description": "Serene hill stations overlooking deep valleys, Phawngpui Blue Mountain Peak, and peaceful heritage villages.",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+    "highlights": ["Reiek Heritage Village", "Phawngpui Peak", "Tamdil Lake"]
+  },
+  {
+    "id": "DEST-007",
+    "name": "Loktak Lake & Keibul Lamjao",
+    "state": "Manipur",
+    "category": "Floating Islands & Culture",
+    "description": "The largest freshwater lake in Northeast India, featuring unique floating islands (Phumdis) and the endangered Sangai deer.",
+    "image": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80",
+    "highlights": ["Loktak Floating Islands", "Sangai National Park", "Kangla Fort"]
+  },
+  {
+    "id": "DEST-008",
+    "name": "Ujjayanta Palace & Unakoti",
+    "state": "Tripura",
+    "category": "Royal Palaces & Rock Carvings",
+    "description": "Stunning Neoclassical royal palaces and Unakoti's ancient 7th-century bas-relief rock carvings carved into hillside cliffs.",
+    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80",
+    "highlights": ["Ujjayanta Palace", "Unakoti Rock Carvings", "Neermahal Water Palace"]
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "FEST-001",
+    "name": "Hornbill Festival",
+    "state": "Nagaland",
+    "month": "December",
+    "description": "The 'Festival of Festivals' showcasing traditional music, warrior dances, indigenous crafts, and culinary heritage of 17 Naga tribes at Kisama Village.",
+    "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80",
+    "highlights": ["17 Tribal Dances", "Naga Chilli Eating Contest", "Hornbill International Rock Concert"]
+  },
+  {
+    "id": "FEST-002",
+    "name": "Rongali Bihu",
+    "state": "Assam",
+    "month": "April",
+    "description": "Assam's spring harvest celebration featuring vibrant Bihu dance, dhol drumming, pepa horn performances, and traditional feast preparations.",
+    "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80",
+    "highlights": ["Bihu Dance", "Spring Agricultural Blessings", "Assamese Delicacies"]
+  },
+  {
+    "id": "FEST-003",
+    "name": "Wangala Festival",
+    "state": "Meghalaya",
+    "month": "November",
+    "description": "The 100-Drums Wangala Festival of the Garo tribe honoring Saljong, the Sun God, with synchronised drum rhythms and traditional horn headgear dances.",
+    "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80",
+    "highlights": ["100 Synchronized Drums", "Sun God Worship", "Garo Folk Costumes"]
+  },
+  {
+    "id": "FEST-004",
+    "name": "Chapchar Kut",
+    "state": "Mizoram",
+    "month": "March",
+    "description": "Mizoram's joyful spring festival celebrated after clearing jungle lands, featuring Cheraw bamboo dance and traditional Mizo songs.",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80",
+    "highlights": ["Cheraw Bamboo Dance", "Traditional Attire Showcase", "Mizo Folk Choirs"]
+  },
+  {
+    "id": "FEST-005",
+    "name": "Sangai Festival",
+    "state": "Manipur",
+    "month": "November",
+    "description": "A grand cultural extravaganza promoting Manipur's classical Ras Leela dance, Thang-Ta martial arts, and indigenous Sagol Kangjei (Polo).",
+    "image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80",
+    "highlights": ["Ras Leela Dance", "Thang-Ta Martial Arts", "Original Manipur Polo"]
+  },
+  {
+    "id": "FEST-006",
+    "name": "Losar Festival",
+    "state": "Arunachal Pradesh & Sikkim",
+    "month": "February",
+    "description": "Tibetan and Monpa New Year marked by colorful Cham masked dances in ancient monasteries, prayer flags, and community feasts.",
+    "image": "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80",
+    "highlights": ["Cham Masked Dance", "Monastery Rituals", "New Year Blessings"]
+  },
+  {
+    "id": "FEST-007",
+    "name": "Ambubachi Mela",
+    "state": "Assam",
+    "month": "June",
+    "description": "The annual Tantric festival held at the historic Kamakhya Temple in Guwahati, drawing thousands of ascetics and pilgrims.",
+    "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80",
+    "highlights": ["Kamakhya Shrine Gathering", "Aghori Sadhus", "Cultural Chants"]
+  }
+]

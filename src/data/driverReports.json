@@ -1,0 +1,42 @@
+[
+  {
+    "id": "DR-101",
+    "driverId": "DRIVER-882",
+    "routeId": "R-001",
+    "routeName": "Guwahati – Shillong Corridor",
+    "timestamp": "DEMO_RELATIVE",
+    "observation": "Heavy rainfall starting near Nongpoh. Small water streams flowing across lower lane. Speed reduced to 30km/h.",
+    "severity": "medium",
+    "confidence": 88
+  },
+  {
+    "id": "DR-102",
+    "driverId": "DRIVER-419",
+    "routeId": "R-003",
+    "routeName": "Shillong – Silchar Highway",
+    "timestamp": "DEMO_RELATIVE",
+    "observation": "Fresh mudslide at Sonapur tunnel entrance. Total blockade. Vehicles queued for 2 km.",
+    "severity": "critical",
+    "confidence": 95
+  },
+  {
+    "id": "DR-103",
+    "driverId": "DRIVER-204",
+    "routeId": "R-006",
+    "routeName": "Dimapur – Kohima Highway",
+    "timestamp": "DEMO_RELATIVE",
+    "observation": "Road depression near Pagla Pahar expanding. Trucks carrying >10 tons stopped by police.",
+    "severity": "high",
+    "confidence": 91
+  },
+  {
+    "id": "DR-104",
+    "driverId": "DRIVER-711",
+    "routeId": "R-011",
+    "routeName": "Gangtok – Siliguri Highway",
+    "timestamp": "DEMO_RELATIVE",
+    "observation": "Dense fog around Rangpo section. High beam lights mandatory.",
+    "severity": "medium",
+    "confidence": 84
+  }
+]

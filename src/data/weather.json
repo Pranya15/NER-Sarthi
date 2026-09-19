@@ -1,0 +1,92 @@
+[
+  {
+    "district": "East Khasi Hills",
+    "state": "Meghalaya",
+    "temperature": 21,
+    "rainfall": 64,
+    "rainProbability": 78,
+    "visibility": 4.2,
+    "wind": 18,
+    "landslideRisk": "MONITOR"
+  },
+  {
+    "district": "Kamrup Metropolitan",
+    "state": "Assam",
+    "temperature": 31,
+    "rainfall": 12,
+    "rainProbability": 25,
+    "visibility": 9.2,
+    "wind": 10,
+    "landslideRisk": "CLEAR"
+  },
+  {
+    "district": "Cachar",
+    "state": "Assam",
+    "temperature": 29,
+    "rainfall": 82,
+    "rainProbability": 88,
+    "visibility": 2.1,
+    "wind": 24,
+    "landslideRisk": "BLOCKED"
+  },
+  {
+    "district": "Kohima",
+    "state": "Nagaland",
+    "temperature": 22,
+    "rainfall": 70,
+    "rainProbability": 82,
+    "visibility": 2.8,
+    "wind": 16,
+    "landslideRisk": "BLOCKED"
+  },
+  {
+    "district": "Imphal West",
+    "state": "Manipur",
+    "temperature": 26,
+    "rainfall": 45,
+    "rainProbability": 60,
+    "visibility": 5.0,
+    "wind": 14,
+    "landslideRisk": "MONITOR"
+  },
+  {
+    "district": "Aizawl",
+    "state": "Mizoram",
+    "temperature": 24,
+    "rainfall": 78,
+    "rainProbability": 85,
+    "visibility": 2.5,
+    "wind": 20,
+    "landslideRisk": "BLOCKED"
+  },
+  {
+    "district": "West Tripura",
+    "state": "Tripura",
+    "temperature": 32,
+    "rainfall": 18,
+    "rainProbability": 30,
+    "visibility": 8.8,
+    "wind": 12,
+    "landslideRisk": "CLEAR"
+  },
+  {
+    "district": "Gangtok",
+    "state": "Sikkim",
+    "temperature": 18,
+    "rainfall": 58,
+    "rainProbability": 72,
+    "visibility": 3.8,
+    "wind": 22,
+    "landslideRisk": "MONITOR"
+  },
+  {
+    "district": "Papum Pare",
+    "state": "Arunachal Pradesh",
+    "temperature": 27,
+    "rainfall": 40,
+    "rainProbability": 50,
+    "visibility": 5.5,
+    "wind": 15,
+    "landslideRisk": "MONITOR"
+  }
+]

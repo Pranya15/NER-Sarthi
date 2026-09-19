@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+*.db
+*.db-journal
+*.js
+*.js.map
+*.d.ts
+*.d.ts.map
+!src/**/*.js

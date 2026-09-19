@@ -1,0 +1,399 @@
+@import "leaflet/dist/leaflet.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =====================================================
+   CENTRALIZED THEME SYSTEM – CSS VARIABLES
+   ===================================================== */
+
+:root {
+  /* Surface & Background tokens */
+  --bg-app: #eef4ef;
+  --bg-panel: rgba(255, 255, 255, 0.94);
+  --bg-panel-subtle: #f3f7f3;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f5faf6;
+  --bg-card-subtle: #e8f0e9;
+  --bg-input: #fbfdfb;
+  --bg-dropdown: #ffffff;
+  --bg-chip: #eaf2eb;
+
+  /* Border tokens */
+  --border-subtle: rgba(86, 111, 91, 0.16);
+  --border-default: rgba(74, 99, 80, 0.24);
+  --border-strong: rgba(61, 84, 67, 0.42);
+  --border-accent: rgba(82, 113, 89, 0.42);
+
+  /* Typography tokens (strict AA contrast) */
+  --text-primary: #25342b;
+  --text-secondary: #405247;
+  --text-muted: #5d6d61;
+  --text-dim: #748077;
+  --text-accent: #54765e;
+  --text-accent-bright: #3f604a;
+  --text-on-dark: #f8fafc;
+  --text-on-action: #ffffff;
+
+  /* Shadows */
+  --shadow-glass: 0 8px 24px 0 rgba(51, 78, 57, 0.08);
+  --shadow-glass-hover: 0 12px 34px 0 rgba(51, 78, 57, 0.15);
+  --shadow-popover: 0 18px 44px 0 rgba(35, 55, 40, 0.18);
+  --glow-cyan: 0 0 18px rgba(82, 113, 89, 0.22);
+}
+
+html.dark, .dark {
+  /* Surface & Background tokens */
+  --bg-app: #111311;
+  --bg-panel: #1b1e1b;
+  --bg-panel-subtle: #171a17;
+  --bg-card: #252925;
+  --bg-card-hover: #2d312d;
+  --bg-card-subtle: #1d211d;
+  --bg-input: #1b1e1b;
+  --bg-dropdown: #1b1e1b;
+  --bg-chip: #2b302b;
+
+  /* Border tokens */
+  --border-subtle: rgba(212, 218, 209, 0.09);
+  --border-default: rgba(212, 218, 209, 0.15);
+  --border-strong: rgba(212, 218, 209, 0.25);
+  --border-accent: rgba(171, 182, 169, 0.36);
+
+  /* Typography tokens */
+  --text-primary: #eef1ec;
+  --text-secondary: #d1d7ce;
+  --text-muted: #a9b0a5;
+  --text-dim: #838b80;
+  --text-accent: #aeb8ab;
+  --text-accent-bright: #d7ddd4;
+  --text-on-dark: #f8fafc;
+  --text-on-action: #ffffff;
+
+  /* Shadows */
+  --shadow-glass: 0 10px 34px 0 rgba(0, 0, 0, 0.34);
+  --shadow-glass-hover: 0 14px 42px 0 rgba(0, 0, 0, 0.46);
+  --shadow-popover: 0 22px 54px 0 rgba(0, 0, 0, 0.68);
+  --glow-cyan: 0 0 22px rgba(174, 184, 171, 0.22);
+}
+
+/* =====================================================
+   BODY BASE
+   ===================================================== */
+body {
+  background-color: var(--bg-app);
+  background-image: none;
+  background-attachment: fixed;
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-shell {
+  background-color: var(--bg-app);
+  background-image: none;
+  background-attachment: fixed;
+}
+
+/* =====================================================
+   SURFACE UTILITIES (GLASSMORPHISM & PANELS)
+   ===================================================== */
+@layer utilities {
+  .glass-panel {
+    background: var(--bg-panel);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-default);
+    box-shadow: var(--shadow-glass);
+    color: var(--text-primary);
+  }
+
+  .glass-panel-light {
+    background: var(--bg-panel-subtle);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-primary);
+  }
+
+  .glass-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border-default);
+    box-shadow: var(--shadow-glass);
+    color: var(--text-primary);
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .glass-card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-accent);
+    box-shadow: var(--shadow-glass-hover);
+  }
+
+  .glow-cyan {
+    box-shadow: var(--glow-cyan);
+  }
+
+  /* Responsive helper for charts and flex containers */
+  .chart-container {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  /* Hide scrollbar on mobile horizontal bars */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Light mode overrides for form controls */
+html.light select, 
+html.light input:not([type="checkbox"]):not([type="radio"]), 
+html.light textarea {
+  background-color: var(--bg-input) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-default) !important;
+}
+
+html.light select option {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+html.dark select option {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+}
+
+/* =====================================================
+   CUSTOM SCROLLBAR
+   ===================================================== */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+
+::-webkit-scrollbar-track { 
+  background: var(--border-subtle); 
+}
+
+::-webkit-scrollbar-thumb { 
+  background: var(--text-dim); 
+  border-radius: 9999px; 
+}
+
+::-webkit-scrollbar-thumb:hover { 
+  background: var(--text-accent); 
+}
+
+/* =====================================================
+   LEAFLET MAP
+   ===================================================== */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+  z-index: 1;
+}
+
+html.dark .leaflet-container {
+  background-color: #0b1329 !important;
+}
+
+html.light .leaflet-container { 
+  background-color: #e2e8f0 !important; 
+}
+
+.leaflet-popup-content-wrapper {
+  background: var(--bg-panel) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-accent) !important;
+  border-radius: 14px !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-popover) !important;
+}
+
+.leaflet-popup-tip { 
+  background: var(--bg-panel) !important; 
+}
+
+/* Leaflet controls styling */
+.leaflet-bar a {
+  background-color: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+  border-bottom: 1px solid var(--border-subtle) !important;
+}
+.leaflet-bar a:hover {
+  background-color: var(--bg-card-hover) !important;
+  color: var(--text-accent) !important;
+}
+
+/* =====================================================
+   ANIMATIONS
+   ===================================================== */
+@keyframes pulse-red {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.6; transform: scale(1.05); }
+}
+.animate-pulse-red { animation: pulse-red 2s infinite ease-in-out; }
+
+/* =====================================================
+   AUTHENTICATION LANDING SCREEN
+   ===================================================== */
+.auth-shell {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 4vw, 3rem);
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--bg-app);
+}
+
+.auth-shell::before,
+.auth-shell::after {
+  content: '';
+  position: absolute;
+  border: 1px solid rgba(112, 130, 115, 0.18);
+  border-radius: 999px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.auth-shell::before {
+  width: min(42rem, 80vw);
+  height: min(42rem, 80vw);
+  top: -22rem;
+  right: -14rem;
+}
+
+.auth-shell::after {
+  width: min(30rem, 65vw);
+  height: min(30rem, 65vw);
+  bottom: -18rem;
+  left: -10rem;
+}
+
+.auth-shell__toolbar {
+  position: absolute;
+  inset: 1.25rem 1.25rem auto;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 72rem;
+  margin-inline: auto;
+}
+
+html.light .auth-shell {
+  background: var(--bg-app);
+}
+
+html.light .auth-shell::before,
+html.light .auth-shell::after {
+  border-color: rgba(92, 119, 98, 0.2);
+}
+
+/* Keep the Explore hero readable in both themes; only its palette changes. */
+.explore-hero {
+  background-color: #2b302b !important;
+  background-image: none !important;
+}
+
+html.light .explore-hero {
+  background-color: #f3f7f3 !important;
+  background-image: none !important;
+  border-color: #c8d4ca !important;
+}
+
+html.light .auth-shell .glass-panel {
+  background: var(--bg-panel) !important;
+}
+
+html.dark .auth-shell .glass-panel {
+  background: var(--bg-panel) !important;
+}
+
+/* =====================================================
+   LIGHT THEME COMPATIBILITY LAYER
+   Keeps existing feature screens readable while retaining
+   the established glass-card visual language.
+   ===================================================== */
+html.light {
+  color-scheme: light;
+}
+
+html.light .glass-panel:not(.explore-hero),
+html.light .glass-card,
+html.light .glass-panel-light {
+  border-color: var(--border-default);
+}
+
+html.light .glass-panel:not(.explore-hero)[class*="border-white/"],
+html.light .glass-card[class*="border-white/"],
+html.light .glass-panel-light[class*="border-white/"] {
+  border-color: var(--border-default) !important;
+}
+
+html.light .glass-panel:not(.explore-hero) [class*="border-white/"],
+html.light .glass-card [class*="border-white/"],
+html.light .glass-panel-light [class*="border-white/"] {
+  border-color: var(--border-subtle) !important;
+}
+
+html.light .glass-panel:not(.explore-hero) [class*="bg-slate-950"],
+html.light .glass-panel:not(.explore-hero) [class*="bg-slate-900"],
+html.light .glass-panel:not(.explore-hero) [class*="bg-slate-800"],
+html.light .glass-card [class*="bg-slate-950"],
+html.light .glass-card [class*="bg-slate-900"],
+html.light .glass-card [class*="bg-slate-800"] {
+  background-color: var(--bg-card-subtle) !important;
+}
+
+html.light .leaflet-popup-content-wrapper,
+html.light .leaflet-popup-tip {
+  border-color: var(--border-default) !important;
+}
+
+html.light .destination-card__details [class*="border-white/"],
+html.light .explore-hero [class*="border-white/"] {
+  border-color: rgba(255, 255, 255, 0.22) !important;
+}
+
+/* Dashboard views use one predictable fade/slide rather than a spinner or
+   circular animation when switching between charts and the operational map. */
+.dashboard-view-transition {
+  animation: dashboard-view-in 280ms ease-out both;
+}
+
+@keyframes dashboard-view-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid rgba(6, 182, 212, 0.45);
+  outline-offset: 2px;
+}

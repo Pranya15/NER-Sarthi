@@ -1,0 +1,16 @@
+[
+  { "id": "HD-001", "date": "2026-03-12", "district": "East Khasi Hills", "cause": "Landslide", "severity": "High", "clearanceHours": 6.5 },
+  { "id": "HD-002", "date": "2026-03-24", "district": "Cachar", "cause": "Flood", "severity": "Critical", "clearanceHours": 14.0 },
+  { "id": "HD-003", "date": "2026-04-05", "district": "Kohima", "cause": "Landslide", "severity": "High", "clearanceHours": 8.2 },
+  { "id": "HD-004", "date": "2026-04-18", "district": "Aizawl", "cause": "Road Damage", "severity": "Medium", "clearanceHours": 5.0 },
+  { "id": "HD-005", "date": "2026-05-02", "district": "Imphal West", "cause": "Accident", "severity": "Medium", "clearanceHours": 3.5 },
+  { "id": "HD-006", "date": "2026-05-15", "district": "Gangtok", "cause": "Landslide", "severity": "High", "clearanceHours": 7.5 },
+  { "id": "HD-007", "date": "2026-06-01", "district": "Kamrup Metropolitan", "cause": "Flood", "severity": "Medium", "clearanceHours": 4.0 },
+  { "id": "HD-008", "date": "2026-06-14", "district": "Papum Pare", "cause": "Landslide", "severity": "High", "clearanceHours": 9.0 },
+  { "id": "HD-009", "date": "2026-06-28", "district": "West Tripura", "cause": "Road Damage", "severity": "Low", "clearanceHours": 2.5 },
+  { "id": "HD-010", "date": "2026-07-10", "district": "East Khasi Hills", "cause": "Landslide", "severity": "Critical", "clearanceHours": 11.5 },
+  { "id": "HD-011", "date": "2026-07-22", "district": "Cachar", "cause": "Flood", "severity": "High", "clearanceHours": 12.0 },
+  { "id": "HD-012", "date": "2026-08-04", "district": "Kohima", "cause": "Landslide", "severity": "Critical", "clearanceHours": 10.0 },
+  { "id": "HD-013", "date": "2026-08-16", "district": "Gangtok", "cause": "Flood", "severity": "Medium", "clearanceHours": 6.0 },
+  { "id": "HD-014", "date": "2026-08-27", "district": "Aizawl", "cause": "Landslide", "severity": "High", "clearanceHours": 8.5 }
+]

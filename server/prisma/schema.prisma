@@ -1,0 +1,94 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Route {
+  id                   String  @id
+  name                 String
+  origin               String
+  destination          String
+  coordinatesJson      String  // Store as stringified JSON array of [lat, lng]
+  status               String
+  risk                 Int
+  rainRisk             Int
+  landslideRisk        String
+  landslideProbability Int
+  visibility           Float
+  source               String
+  confidence           Int
+  lastUpdated          DateTime
+  nextUpdateMinutes    Int
+  assignedOfficerId    String
+  assignedOfficerName  String
+  sector               String
+  lengthKm             Int
+}
+
+model Officer {
+  id          String @id
+  name        String
+  department  String
+  rank        String
+  controlRoom String
+  status      String
+  location    String
+  lat         Float
+  lng         Float
+  lastUpdate  DateTime
+  lastReportAt DateTime?
+  lastReport  String
+  sector      String
+}
+
+model Vehicle {
+  id          String @id
+  cargo       String
+  origin      String
+  destination String
+  eta         String
+  etaMinutes  Int
+  status      String
+  lat         Float
+  lng         Float
+  speed       Int
+  routeId     String
+  risk        Int
+  driverName  String
+}
+
+model FieldReport {
+  id          String   @id
+  officerId   String
+  routeId     String?
+  type        String
+  observation String
+  severity    String
+  createdAt   DateTime @default(now())
+}
+
+model OperationalEvent {
+  id          String   @id
+  kind        String
+  title       String
+  description String?
+  severity    String?
+  routeId     String?
+  officerId   String?
+  createdAt   DateTime @default(now())
+}
+
+model ActivityLog {
+  id       String   @id
+  actorId  String?
+  action   String
+  details  String?
+  createdAt DateTime @default(now())
+}
